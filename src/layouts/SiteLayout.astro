@@ -30,6 +30,8 @@ const {
     <meta name="theme-color" content="#08111f" />
     {includeAppJs && <script is:inline>document.documentElement.classList.add("js");</script>}
     {includeAppJs && <script src="/app.js" defer></script>}
+    <script is:inline>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
   </head>
   <body class={bodyClass}>
     <div class="page-shell">
